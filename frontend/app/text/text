@@ -1,0 +1,83 @@
+gym-management/
+│
+├── app/
+│   ├── page.tsx                    # Login / Landing
+│   │
+│   ├── dashboard/
+│   │   ├── page.tsx                # Dashboard
+│   │   │
+│   │   ├── members/
+│   │   │   ├── page.tsx            # All Members
+│   │   │   ├── add/
+│   │   │   │   └── page.tsx        # Add Member
+│   │   │   └── [id]/
+│   │   │       └── page.tsx        # Member Details
+│   │   │
+│   │   ├── trainers/
+│   │   │   ├── page.tsx            # Trainers
+│   │   │   ├── add/
+│   │   │   │   └── page.tsx
+│   │   │   └── [id]/
+│   │   │       └── page.tsx
+│   │   │
+│   │   ├── attendance/
+│   │   │   └── page.tsx            # Attendance
+│   │   │
+│   │   ├── plans/
+│   │   │   └── page.tsx            # Membership Plans
+│   │   │
+│   │   ├── payments/
+│   │   │   └── page.tsx            # Payments / Billing
+│   │   │
+│   │   ├── expenses/
+│   │   │   └── page.tsx            # Gym Expenses
+│   │   │
+│   │   ├── workout/
+│   │   │   └── page.tsx            # Workout Plans
+│   │   │
+│   │   ├── diet/
+│   │   │   └── page.tsx            # Diet Plans
+│   │   │
+│   │   └── reports/
+│   │       └── page.tsx             # Reports
+│   │
+│   ├── login/
+│   │   └── page.tsx
+│   │
+│   └── api/
+│       ├── members/
+│       │   └── route.ts
+│       ├── trainers/
+│       │   └── route.ts
+│       ├── attendance/
+│       │   └── route.ts
+│       └── payments/
+│           └── route.ts
+│
+├── components/
+│   ├── Navbar.tsx
+│   ├── Sidebar.tsx
+│   ├── DashboardCard.tsx
+│   ├── MemberTable.tsx
+│   ├── TrainerTable.tsx
+│   ├── Modal.tsx
+│   └── Button.tsx
+│
+├── lib/
+│   ├── db.ts                       # Database connection
+│   ├── auth.ts                     # Authentication
+│   └── utils.ts
+│
+├── models/
+│   ├── Member.ts
+│   ├── Trainer.ts
+│   ├── Payment.ts
+│   ├── Attendance.ts
+│   └── Plan.ts
+│
+├── public/
+│   └── images/
+│
+├── .env.local
+├── package.json
+└── next.config.ts
