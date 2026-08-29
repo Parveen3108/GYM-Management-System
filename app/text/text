@@ -81,3 +81,9 @@ gym-management/
 ├── .env.local
 ├── package.json
 └── next.config.ts
+
+
+    //frontend run 
+
+// "start": "next start",
+    // "dev": "next dev",
