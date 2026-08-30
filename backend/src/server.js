@@ -6,6 +6,7 @@ require("dotenv").config({
 
 const connectDB = require("./config/db");
 const memberRoutes = require("./routes/member.route");
+const trainerRoutes = require("./routes/trainers.route");
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/members", memberRoutes);
+app.use("/api/trainers", trainerRoutes);
 
 const PORT = process.env.PORT || 5000;
 
