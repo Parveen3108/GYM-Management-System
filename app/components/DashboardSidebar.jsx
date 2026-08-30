@@ -69,6 +69,11 @@ export default function Sidebar() {
       icon: <FiCreditCard />,
       href: "/dashboard/billing",
     },
+    {
+      title: "MemberShip",
+  
+      href: "/dashboard/membership",
+    },
 
     {
       title: "Supplements",

@@ -73,7 +73,7 @@ const getMemberById = async (req, res) => {
     });
   } catch (err) {
     console.error("Error fetching member", err);
-    res.status(500).json({
+    res.status(500).json({ 
       message: "Internal server error",
     });
   }

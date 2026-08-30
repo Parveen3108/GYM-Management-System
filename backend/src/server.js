@@ -7,6 +7,10 @@ require("dotenv").config({
 const connectDB = require("./config/db");
 const memberRoutes = require("./routes/member.route");
 const trainerRoutes = require("./routes/trainers.route");
+const membershipRoutes = require("./routes/membership.route");
+const attendanceRoutes = require("./routes/attendance.route");
+const billingRoutes = require("./routes/billing.route");
+const dietPlanRoutes = require("./routes/dietPlan.route");
 
 const app = express();
 
@@ -21,6 +25,10 @@ app.get("/", (req, res) => {
 
 app.use("/api/members", memberRoutes);
 app.use("/api/trainers", trainerRoutes);
+app.use("/api/memberships", membershipRoutes);
+app.use("/api/attendance", attendanceRoutes);
+app.use("/api/billing", billingRoutes);
+app.use("/api/diet-plans", dietPlanRoutes);
 
 const PORT = process.env.PORT || 5000;
 
